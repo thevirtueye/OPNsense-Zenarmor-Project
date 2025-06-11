@@ -66,16 +66,31 @@ The system was entirely built in a virtual lab environment using VMware, with th
 
 ---
 
-## 🎯 Objectives
+## 🖧 Network Topology
 
-- Simulate a hospital network with four isolated zones:
-  - **Pediatrics** 
-  - **Surgical**  
-  - **Administrative**  
-  - **Guest**  
-  - **Medical Records**
-  - **Sysadmin**  
-  - Plus a **DMZ** for public-facing services
+The simulated network consists of 7 segments, each representing a functional area within a hospital environment. VLANs are used to logically separate the zones, and all traffic is routed and filtered via OPNsense 25.1.
+
+![Hospital Network Topology](./Topology.png)
+
+### 🧩 VLAN Mapping
+
+| VLAN ID | Zone              | OS          |
+|---------|-------------------|-------------|
+| 10      | Pediatrics         | Windows     |
+| 20      | Surgery            | Windows     |
+| 30      | Medical Records    | Windows     |
+| 40      | Guest              | Windows     |
+| 50      | Administration     | Windows     |
+| -       | SysAdmin           | Windows     |
+| -       | DMZ – Web Server   | Ubuntu      |
+
+**Note:**  
+- The SysAdmin zone is directly connected to the OPNsense LAN interface for secure access.  
+- The DMZ hosts a public-facing web service for booking, isolated on a dedicated interface.
+
+---
+
+## 🎯 Objectives
 
 - Install and configure **OPNsense** as the perimeter firewall
 - Integrate and enable **Zenarmor** as NGFW for traffic inspection and advanced policy enforcement
