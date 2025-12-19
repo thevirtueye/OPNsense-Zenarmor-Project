@@ -110,9 +110,6 @@ The simulated network consists of 7 segments, each representing a functional are
 
 ---
 
-
----
-
 ## 📜 License
 
 This project is released under the **MIT License**.  
