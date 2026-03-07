@@ -167,4 +167,4 @@ Free to use for educational and research purposes. Please credit the author wher
 
 ## Author & Contact
 
-Created by **Alberto Cirillo**.
+Created by **Alberto Cirillo** — 2025
