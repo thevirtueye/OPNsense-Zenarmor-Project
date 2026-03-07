@@ -1,9 +1,9 @@
 # OPNsense + Zenarmor – NGFW Implementation in a Simulated Hospital Network
 
-## 🎥 Project Video
+## Project Video
 [![Watch on YouTube](https://img.youtube.com/vi/14oHS5KB80M/0.jpg)](https://www.youtube.com/watch?v=14oHS5KB80M)
 
-🔗 **[Click here to watch the full video on YouTube](https://www.youtube.com/watch?v=14oHS5KB80M)**
+**[Click here to watch the full video on YouTube](https://www.youtube.com/watch?v=14oHS5KB80M)**
 
 > **Language:** Italian  
 > **English subtitles available** via YouTube captioning
