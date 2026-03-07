@@ -5,12 +5,12 @@
 
 🔗 **[Click here to watch the full video on YouTube](https://www.youtube.com/watch?v=14oHS5KB80M)**
 
-> 🗣️ **Language:** Italian  
-> 📺 **English subtitles available** via YouTube captioning
+> **Language:** Italian  
+> **English subtitles available** via YouTube captioning
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 This project demonstrates the implementation of a segmented hospital network using the open-source **OPNsense** firewall and the **Zenarmor** Next-Generation Firewall (NGFW) plugin.
 
@@ -18,7 +18,7 @@ The system was entirely built in a virtual lab environment using VMware, with th
 
 ---
 
-## 📌 Video Timeline
+## Video Timeline
 
 00:00 - Introduction to OPNsense
 
@@ -66,13 +66,13 @@ The system was entirely built in a virtual lab environment using VMware, with th
 
 ---
 
-## 🖧 Network Topology
+## Network Topology
 
 The simulated network consists of 7 segments, each representing a functional area within a hospital environment. VLANs are used to logically separate the zones, and all traffic is routed and filtered via OPNsense 25.1.
 
 ![Hospital Network Topology](./Topology.png)
 
-### 🧩 VLAN Mapping
+### VLAN Mapping
 
 | VLAN ID | Zone              | OS          |
 |---------|-------------------|-------------|
@@ -90,7 +90,7 @@ The simulated network consists of 7 segments, each representing a functional are
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Install and configure **OPNsense** as the perimeter firewall
 - Integrate and enable **Zenarmor** as NGFW for traffic inspection and advanced policy enforcement
@@ -100,7 +100,7 @@ The simulated network consists of 7 segments, each representing a functional are
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - [OPNsense](https://opnsense.org/) (FreeBSD-based open-source firewall)
 - [Zenarmor](https://www.zenarmor.com/) (NGFW plugin)
@@ -110,14 +110,14 @@ The simulated network consists of 7 segments, each representing a functional are
 
 ---
 
-## 📜 License
+## License
 
 This project is released under the **MIT License**.  
 Free to use for educational and research purposes. Please credit the author where applicable.
 
 ---
 
-## 🙋 Author & Contact
+## Author & Contact
 
 Created by **Alberto Cirillo**, Cybersecurity student.  
 
