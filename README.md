@@ -167,4 +167,4 @@ Free to use for educational and research purposes. Please credit the author wher
 
 ## Author & Contact
 
-Created by **Alberto Cirillo**, Cybersecurity student.
+Created by **Alberto Cirillo**.
