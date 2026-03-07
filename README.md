@@ -90,6 +90,28 @@ The simulated network consists of 7 segments, each representing a functional are
 
 ---
 
+## Firewall Policy Summary
+
+| From \ To        | Pediatrics | Surgery | Medical Records | Guest | Administration | SysAdmin | Internet          | DMZ              |
+|------------------|:----------:|:-------:|:---------------:|:-----:|:--------------:|:--------:|:-----------------:|:----------------:|
+| **Pediatrics**   | ✅         | ❌      | ✅ ¹            | ❌    | ❌             | ❌       | ✅ ²              | ✅               |
+| **Surgery**      | ❌         | ✅      | ✅ ¹            | ❌    | ❌             | ❌       | ✅ ²              | ✅               |
+| **Medical Rec.** | ❌ ³       | ❌ ³    | ✅              | ❌    | ❌ ³           | ❌       | ❌                | ✅               |
+| **Guest**        | ❌         | ❌      | ❌              | ✅    | ❌             | ❌       | ✅ ²              | ✅               |
+| **Administration**| ❌        | ❌      | ✅ ¹            | ❌    | ✅             | ✅       | ✅ ²              | ✅ ⁴             |
+| **SysAdmin**     | ✅         | ✅      | ✅              | ✅    | ✅             | ✅       | ✅                | ✅               |
+| **Internet**     | ❌         | ❌      | ❌              | ❌    | ❌             | ❌       | ✅                | ✅               |
+| **DMZ**          | ❌         | ❌      | ❌              | ❌    | ❌             | ❌       | ✅ ⁵              | ✅               |
+
+> **Notes:**
+> 1. SFTP only — read and transfer of own department records to local machine.
+> 2. Filtered via Zenarmor NGFW policy.
+> 3. Pull model — Medical Records does not initiate connections; other departments pull data from it.
+> 4. SFTP only — read and transfer of clinical records and bookings to local machine + web access.
+> 5. HTTPS only.
+
+---
+
 ## Objectives
 
 - Install and configure **OPNsense** as the perimeter firewall
