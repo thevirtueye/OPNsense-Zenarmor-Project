@@ -105,6 +105,7 @@ The simulated network consists of 7 segments, each representing a functional are
 - [OPNsense](https://opnsense.org/) (FreeBSD-based open-source firewall)
 - [Zenarmor](https://www.zenarmor.com/) (NGFW plugin)
 - VMware Workstation
+- Windows (hospital environments)
 - Kali Linux (attack simulation)
 - Ubuntu Server (DMZ web service)
 
