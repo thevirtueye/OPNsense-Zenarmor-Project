@@ -165,6 +165,6 @@ Free to use for educational and research purposes. Please credit the author wher
 
 ---
 
-## Author & Contact
+## Author
 
 Created by **Alberto Cirillo** — 2025
